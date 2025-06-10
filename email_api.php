@@ -20,7 +20,7 @@ quindi il client riceverebbe una risposta vuota (nessun output JSON).
 
 function email()
 {
-    $key = '32b516ddd63147c48c9da218b638fcc5'; // chiave per API: 32b516ddd63147c48c9da218b638fcc5
+    $key = 'secret'; 
     $endPoint_verify = 'https://emailvalidation.abstractapi.com/v1/';
 
     // Prendo l'email dalla query string
