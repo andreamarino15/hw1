@@ -20,8 +20,8 @@ quindi il client riceverebbe una risposta vuota (nessun output JSON).
 
 function youtube()
 {
-    $key = 'AIzaSyDA1MqSKvbw-eun863IUN--9kO5z45rNt0'; // chiave per API: AIzaSyDA1MqSKvbw-eun863IUN--9kO5z45rNt0
-    $playlistID = 'UU8i2VloWFKMugidh9rCUAoA'; // id del canale UU8i2VloWFKMugidh9rCUAoA
+    $key = 'secret'; 
+    $playlistID = 'secret'; 
 
     $url = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=$playlistID&key=$key"; // endpoint +id +key
 
