@@ -1,0 +1,30 @@
+<?php
+    require_once 'dati_db.php';
+    
+    // Controllo che l'accesso sia corretto
+    if (!isset($_GET["q"])) {
+        echo "Qualcosa è andato storto";
+        exit;
+    }
+
+    // Imposto l'header della risposta --> di tipo json
+    header('Content-Type: application/json');
+    
+    // Connessione al DB
+    $conn = mysqli_connect($dati_db['host'], $dati_db['user'], $dati_db['password'], $dati_db['name']);
+
+    // Leggo la stringa dell'email
+    $email = mysqli_real_escape_string($conn, $_GET["q"]); // pulizia dei dati prima dell'inseriemento nella query SQL
+
+    // Costruisco la query
+    $query = "SELECT email FROM utente WHERE email = '$email'";
+
+    // Eseguo la query
+    $res = mysqli_query($conn, $query) or die(mysqli_error($conn));
+
+    // Torna un JSON con chiave exists e valore boolean
+    echo json_encode(array('exists' => mysqli_num_rows($res) > 0 ? true : false));
+
+    // Chiudo la connessione con il DB
+    mysqli_close($conn);
+?>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>hw1</string>
+			<key>host</key>
+			<string>127.0.0.1</string>
+			<key>name</key>
+			<string>anonymous@127.0.0.1</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPTCPIPConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string></string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8mb4</string>
+			<key>contentFilter</key>
+			<dict/>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRk
+			YXRhgAGtCwwZGhscHSEoLDA1OlUkbnVsbNMNDg8QFBhXTlMua2V5
+			c1pOUy5vYmplY3RzViRjbGFzc6MREhOAAoADgASjFRYXgAWABoAI
+			gAxUdHlwZVRyb3dzVGtleXNfECZTZWxlY3Rpb25EZXRhaWxUeXBl
+			UHJpbWFyeUtleWVkRGV0YWlsc9MNDg8eHyCgoIAH0iIjJCVaJGNs
+			YXNzbmFtZVgkY2xhc3Nlc18QE05TTXV0YWJsZURpY3Rpb25hcnmj
+			JCYnXE5TRGljdGlvbmFyeVhOU09iamVjdNIODykroSqACYAL0g8t
+			Li9ZTlMuc3RyaW5ngApSaWTSIiMxMl8QD05TTXV0YWJsZVN0cmlu
+			Z6MxMzRYTlNTdHJpbmdYTlNPYmplY3TSIiM2N15OU011dGFibGVB
+			cnJheaM2ODlXTlNBcnJheVhOU09iamVjdNIiIyY7oiY8WE5TT2Jq
+			ZWN0AAgAEQAaACQAKQAyADcASQBMAFEAUwBhAGcAbgB2AIEAiACM
+			AI4AkACSAJYAmACaAJwAngCjAKgArQDWAN0A3gDfAOEA5gDxAPoB
+			EAEUASEBKgEvATEBMwE1AToBRAFGAUkBTgFgAWQBbQF2AXsBigGO
+			AZYBnwGkAacAAAAAAAACAQAAAAAAAAA9AAAAAAAAAAAAAAAAAAAB
+			sA==
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {1228, 750}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>create if not exists database hw1;
+use hw1;
+
+create table if not exists utente(
+name varchar(255),
+surnam varchar(255),
+username varchar(255),
+email varchar(255),
+password varchar(255),
+id integer primary key AUTO_INCREMENT
+);
+
+select * from utente;
+
+create table articoli(
+id integer PRIMARY KEY AUTO_INCREMENT,
+nome varchar(255),
+prezzo decimal(10, 2),
+immagine varchar(255)
+);
+
+insert into articoli (nome, prezzo, immagine) values
+('KAWS Urge Portfolio Set Of 10 Prints', 52988.00, 'https://images.stockx.com/images/KAWS-Urge-Portfolio-Set-Of-10-Prints-Signed-Edition-of-250-1.jpg?fit=fill&amp;bg=FFFFFF&amp;w=576&amp;h=384&amp;q=60&amp;dpr=1&amp;trim=color&amp;updated_at=1618328520'),
+('KAWS URGE Postcard Set of 10', 113.00, 'https://images.stockx.com/images/KAWS-URGE-Postcard-Set-of-10.jpg?fit=fill&amp;bg=FFFFFF&amp;w=576&amp;h=384&amp;q=60&amp;dpr=1&amp;trim=color&amp;updated_at=1616616873'),
+('KAWS What Party Portfolio Set Of 7 Prints', 127845.00, 'https://images.stockx.com/images/KAWS-What-Party-Portfolio-Set-Of-7-Prints-Signed-Edition-of-100.jpg?fit=fill&amp;bg=FFFFFF&amp;w=576&amp;h=384&amp;q=60&amp;dpr=1&amp;trim=color&amp;updated_at=1618322835'),
+('KAWS Urge Print #9 Light Green', 219.00, 'https://images.stockx.com/images/KAWS-Urge-Print-9-Light-Green-Signed-Edition-of-250-1.jpg?fit=fill&amp;bg=FFFFFF&amp;w=576&amp;h=384&amp;q=60&amp;dpr=1&amp;trim=color&amp;updated_at=1618328596'),
+('KAWS Urge Print #8 Purple', 200.00, 'https://images.stockx.com/images/KAWS-Urge-Print-8-Purple-Signed-Edition-of-250.jpg?fit=fill&amp;bg=FFFFFF&amp;w=576&amp;h=384&amp;q=60&amp;dpr=1&amp;trim=color&amp;updated_at=1618322823'),
+
+('ASICS Gel-1130', 96.00, 'https://images.stockx.com/images/ASICS-Gel-1130-Black-Pure-Silver-Product.jpg?fit=fill&amp;bg=FFFFFF&amp;w=300&amp;h=214&amp;fm=webp&amp;auto=compress&amp;q=90&amp;dpr=2&amp;trim=color&amp;updated_at=1738193358'),
+('ASICS Gel-1130', 108.00, 'https://images.stockx.com/images/ASICS-Gel-1130-White-Clay-Canyon-Product.jpg?fit=fill&amp;bg=FFFFFF&amp;w=300&amp;h=214&amp;fm=webp&amp;auto=compress&amp;q=90&amp;dpr=2&amp;trim=color&amp;updated_at=1738193358'),
+('ASICS Gel-1130', 113.00, 'https://images.stockx.com/images/ASICS-Gel-1130-White-Cloud-Grey-Product.jpg?fit=fill&amp;bg=FFFFFF&amp;w=300&amp;h=214&amp;fm=webp&amp;auto=compress&amp;q=90&amp;dpr=2&amp;trim=color&amp;updated_at=1738193358'),
+('ASICS Gel-1130', 106.00, 'https://images.stockx.com/images/ASICS-Gel-1130-White-Pure-Silver-Product.jpg?fit=fill&amp;bg=FFFFFF&amp;w=300&amp;h=214&amp;fm=webp&amp;auto=compress&amp;q=90&amp;dpr=2&amp;trim=color&amp;updated_at=1738193358'),
+('ASICS Gel-1130', 95.00, 'https://images.stockx.com/images/ASICS-Gel-1130-White-Black-Product.jpg?fit=fill&amp;bg=FFFFFF&amp;w=300&amp;h=214&amp;fm=webp&amp;auto=compress&amp;q=90&amp;dpr=2&amp;trim=color&amp;updated_at=1738193358'),
+
+('Bearbrick Jean-Michel Basquiat', 658.00, 'https://images.stockx.com/images/Bearbrick-Jean-Michel-Basquiat-9-1000.jpg?fit=fill&amp;bg=FFFFFF&amp;w=576&amp;h=384&amp;q=60&amp;dpr=1&amp;trim=color&amp;updated_at=1667023481'),
+('Bearbrick Andy Warhol x JEAN-MICHEL BASQUIAT', 485.00, 'https://images.stockx.com/images/Bearbrick-Andy-Warhol-x-JEAN-MICHEL-BASQUIAT-1-1000.png?fit=fill&amp;bg=FFFFFF&amp;w=576&amp;h=384&amp;q=60&amp;dpr=1&amp;trim=color&amp;updated_at=1610482953'),
+('Bearbrick Jean-Michel Basquiat', 913.00, 'https://images.stockx.com/images/Bearbrick-Jean-Michel-Basquiat-Special-1000.jpg?fit=fill&amp;bg=FFFFFF&amp;w=576&amp;h=384&amp;q=60&amp;dpr=1&amp;trim=color&amp;updated_at=1701909902'),
+('Bearbrick Jean-Michel Basquiat', 258.00, 'https://images.stockx.com/images/Bearbrick-Jean-Michel-Basquiat-Special-100-400-Set.jpg?fit=fill&amp;bg=FFFFFF&amp;w=576&amp;h=384&amp;q=60&amp;dpr=1&amp;trim=color&amp;updated_at=1701909805'),
+('Bearbrick Texalium 1000%', 3524.00, 'https://images.stockx.com/images/Bearbrick-Texalium-1000-Multi.png?fit=fill&amp;bg=FFFFFF&amp;w=576&amp;h=384&amp;q=60&amp;dpr=1&amp;trim=color&amp;updated_at=1616760638'),
+('Bearbrick Jean-Michel Basquiat', 594.00, 'https://images.stockx.com/images/Bearbrick-Jean-Michel-Basquiat-7-1000.png?fit=fill&amp;bg=FFFFFF&amp;w=576&amp;h=384&amp;q=60&amp;dpr=1&amp;trim=color&amp;updated_at=1606163533'),
+
+('Jordan 5 Retro OG', 286.00, 'https://images.stockx.com/360/Air-Jordan-5-Retro-OG-Black-Metallic-Reimagined/Images/Air-Jordan-5-Retro-OG-Black-Metallic-Reimagined/Lv2/img01.jpg?w=576&amp;q=60&amp;dpr=1&amp;updated_at=1738592489&amp;h=384'),
+('Air Jordan 4 Retro OG SP', 295.00, 'https://images.stockx.com/360/Air-Air-Jordan-4-Retro-OG-SP-Nigel-Sylvester-Bike-Air-Firewood-Orange/Images/Air-Air-Jordan-4-Retro-OG-SP-Nigel-Sylvester-Bike-Air-Firewood-Orange/Lv2/img01.jpg?w=576&amp;q=60&amp;dpr=1&amp;updated_at=1741195086&amp;h=384'),
+('Jordan 1 Retro High OG SP', 205.00, 'https://images.stockx.com/360/Air-Jordan-1-Retro-High-OG-SP-Union-LA-Chicago-Shadow/Images/Air-Jordan-1-Retro-High-OG-SP-Union-LA-Chicago-Shadow/Lv2/img01.jpg?w=576&amp;q=60&amp;dpr=1&amp;updated_at=1740687534&amp;h=384'),
+('Jordan 1 Retro High OG', 148.00, 'https://images.stockx.com/360/Air-Jordan-1-Retro-High-OG-UNC-Reimagined/Images/Air-Jordan-1-Retro-High-OG-UNC-Reimagined/Lv2/img01.jpg?w=576&amp;q=60&amp;dpr=1&amp;updated_at=1744813467&amp;h=384'),
+('Jordan 1 Retro High OG', 140.00, 'https://images.stockx.com/360/Air-Jordan-1-Retro-High-OG-Rare-Air/Images/Air-Jordan-1-Retro-High-OG-Rare-Air/Lv2/img01.jpg?w=576&amp;q=60&amp;dpr=1&amp;updated_at=1741361073&amp;h=384'),
+
+('Jordan 12 Retro Flu Game (2025)', 253.00, 'https://images.stockx.com/360/Air-Jordan-12-Retro-Flu-Game-2025/Images/Air-Jordan-12-Retro-Flu-Game-2025/Lv2/img01.jpg?w=576&amp;q=60&amp;dpr=1&amp;updated_at=1740507702&amp;h=384'),
+('Jordan 12 Retro Melo (2025)', 183.00, 'https://images.stockx.com/360/Air-Jordan-12-Retro-Melo-2025/Images/Air-Jordan-12-Retro-Melo-2025/Lv2/img01.jpg?w=576&amp;q=60&amp;dpr=1&amp;updated_at=1746123836&amp;h=384'),
+('Jordan 12 Retro Playoffs (2022)', 141.00, 'https://images.stockx.com/360/Air-Jordan-12-Retro-Playoffs-2022/Images/Air-Jordan-12-Retro-Playoffs-2022/Lv2/img01.jpg?w=576&amp;q=60&amp;dpr=1&amp;updated_at=1646230066&amp;h=384'),
+('Jordan 12 Retro SP A Ma Maniére Black (Women)', 110.00, 'https://images.stockx.com/360/Air-Jordan-12-Retro-A-Ma-Maniere-Black-W/Images/Air-Jordan-12-Retro-A-Ma-Maniere-Black-W/Lv2/img01.jpg?w=576&amp;q=60&amp;dpr=1&amp;updated_at=1677791962&amp;h=384'),
+('Jordan 12 Retro Phantom (Women)', 178.00, 'https://images.stockx.com/360/Air-Jordan-12-Retro-Phantom-Womens/Images/Air-Jordan-12-Retro-Phantom-Womens/Lv2/img01.jpg?w=576&amp;q=60&amp;dpr=1&amp;updated_at=1733862181&amp;h=384');
+
+
+CREATE TABLE preferiti (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    titolo VARCHAR(255) NOT NULL,
+    main_image TEXT NOT NULL,
+    prezzo VARCHAR(50) NOT NULL,
+    varianti TEXT NOT NULL, -- JSON delle varianti
+    FOREIGN KEY (user_id) REFERENCES utente(id)
+);
+
+select * from preferiti;
+</string>
+			<key>table</key>
+			<string>preferiti</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>212</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>select * from preferiti</string>
+		<string>select * from utente</string>
+		<string>CREATE TABLE preferiti (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    titolo VARCHAR(255) NOT NULL,
+    main_image TEXT NOT NULL,
+    prezzo VARCHAR(50) NOT NULL,
+    varianti TEXT NOT NULL, -- JSON delle varianti
+    FOREIGN KEY (user_id) REFERENCES utente(id)
+)</string>
+		<string>create table preferiti(
+id integer PRIMARY KEY AUTO_INCREMENT,
+nome varchar(255),
+prezzo decimal(10, 2),
+immagine varchar(255)
+)</string>
+		<string>create table preferiti(
+id integer PRIMARY KEY,
+nome varchar(255),
+prezzo decimal(10, 2),
+immagine varchar(255)
+)</string>
+		<string>insert into articoli (nome, prezzo, immagine) values
+('KAWS Urge Portfolio Set Of 10 Prints', 52988.00, 'https://images.stockx.com/images/KAWS-Urge-Portfolio-Set-Of-10-Prints-Signed-Edition-of-250-1.jpg?fit=fill&amp;bg=FFFFFF&amp;w=576&amp;h=384&amp;q=60&amp;dpr=1&amp;trim=color&amp;updated_at=1618328520'),
+('KAWS URGE Postcard Set of 10', 113.00, 'https://images.stockx.com/images/KAWS-URGE-Postcard-Set-of-10.jpg?fit=fill&amp;bg=FFFFFF&amp;w=576&amp;h=384&amp;q=60&amp;dpr=1&amp;trim=color&amp;updated_at=1616616873'),
+('KAWS What Party Portfolio Set Of 7 Prints', 127845.00, 'https://images.stockx.com/images/KAWS-What-Party-Portfolio-Set-Of-7-Prints-Signed-Edition-of-100.jpg?fit=fill&amp;bg=FFFFFF&amp;w=576&amp;h=384&amp;q=60&amp;dpr=1&amp;trim=color&amp;updated_at=1618322835'),
+('KAWS Urge Print #9 Light Green', 219.00, 'https://images.stockx.com/images/KAWS-Urge-Print-9-Light-Green-Signed-Edition-of-250-1.jpg?fit=fill&amp;bg=FFFFFF&amp;w=576&amp;h=384&amp;q=60&amp;dpr=1&amp;trim=color&amp;updated_at=1618328596'),
+('KAWS Urge Print #8 Purple', 200.00, 'https://images.stockx.com/images/KAWS-Urge-Print-8-Purple-Signed-Edition-of-250.jpg?fit=fill&amp;bg=FFFFFF&amp;w=576&amp;h=384&amp;q=60&amp;dpr=1&amp;trim=color&amp;updated_at=1618322823'),
+
+('ASICS Gel-1130', 96.00, 'https://images.stockx.com/images/ASICS-Gel-1130-Black-Pure-Silver-Product.jpg?fit=fill&amp;bg=FFFFFF&amp;w=300&amp;h=214&amp;fm=webp&amp;auto=compress&amp;q=90&amp;dpr=2&amp;trim=color&amp;updated_at=1738193358'),
+('ASICS Gel-1130', 108.00, 'https://images.stockx.com/images/ASICS-Gel-1130-White-Clay-Canyon-Product.jpg?fit=fill&amp;bg=FFFFFF&amp;w=300&amp;h=214&amp;fm=webp&amp;auto=compress&amp;q=90&amp;dpr=2&amp;trim=color&amp;updated_at=1738193358'),
+('ASICS Gel-1130', 113.00, 'https://images.stockx.com/images/ASICS-Gel-1130-White-Cloud-Grey-Product.jpg?fit=fill&amp;bg=FFFFFF&amp;w=300&amp;h=214&amp;fm=webp&amp;auto=compress&amp;q=90&amp;dpr=2&amp;trim=color&amp;updated_at=1738193358'),
+('ASICS Gel-1130', 106.00, 'https://images.stockx.com/images/ASICS-Gel-1130-White-Pure-Silver-Product.jpg?fit=fill&amp;bg=FFFFFF&amp;w=300&amp;h=214&amp;fm=webp&amp;auto=compress&amp;q=90&amp;dpr=2&amp;trim=color&amp;updated_at=1738193358'),
+('ASICS Gel-1130', 95.00, 'https://images.stockx.com/images/ASICS-Gel-1130-White-Black-Product.jpg?fit=fill&amp;bg=FFFFFF&amp;w=300&amp;h=214&amp;fm=webp&amp;auto=compress&amp;q=90&amp;dpr=2&amp;trim=color&amp;updated_at=1738193358'),
+
+('Bearbrick Jean-Michel Basquiat', 658.00, 'https://images.stockx.com/images/Bearbrick-Jean-Michel-Basquiat-9-1000.jpg?fit=fill&amp;bg=FFFFFF&amp;w=576&amp;h=384&amp;q=60&amp;dpr=1&amp;trim=color&amp;updated_at=1667023481'),
+('Bearbrick Andy Warhol x JEAN-MICHEL BASQUIAT', 485.00, 'https://images.stockx.com/images/Bearbrick-Andy-Warhol-x-JEAN-MICHEL-BASQUIAT-1-1000.png?fit=fill&amp;bg=FFFFFF&amp;w=576&amp;h=384&amp;q=60&amp;dpr=1&amp;trim=color&amp;updated_at=1610482953'),
+('Bearbrick Jean-Michel Basquiat', 913.00, 'https://images.stockx.com/images/Bearbrick-Jean-Michel-Basquiat-Special-1000.jpg?fit=fill&amp;bg=FFFFFF&amp;w=576&amp;h=384&amp;q=60&amp;dpr=1&amp;trim=color&amp;updated_at=1701909902'),
+('Bearbrick Jean-Michel Basquiat', 258.00, 'https://images.stockx.com/images/Bearbrick-Jean-Michel-Basquiat-Special-100-400-Set.jpg?fit=fill&amp;bg=FFFFFF&amp;w=576&amp;h=384&amp;q=60&amp;dpr=1&amp;trim=color&amp;updated_at=1701909805'),
+('Bearbrick Texalium 1000%', 3524.00, 'https://images.stockx.com/images/Bearbrick-Texalium-1000-Multi.png?fit=fill&amp;bg=FFFFFF&amp;w=576&amp;h=384&amp;q=60&amp;dpr=1&amp;trim=color&amp;updated_at=1616760638'),
+('Bearbrick Jean-Michel Basquiat', 594.00, 'https://images.stockx.com/images/Bearbrick-Jean-Michel-Basquiat-7-1000.png?fit=fill&amp;bg=FFFFFF&amp;w=576&amp;h=384&amp;q=60&amp;dpr=1&amp;trim=color&amp;updated_at=1606163533'),
+
+('Jordan 5 Retro OG', 286.00, 'https://images.stockx.com/360/Air-Jordan-5-Retro-OG-Black-Metallic-Reimagined/Images/Air-Jordan-5-Retro-OG-Black-Metallic-Reimagined/Lv2/img01.jpg?w=576&amp;q=60&amp;dpr=1&amp;updated_at=1738592489&amp;h=384'),
+('Air Jordan 4 Retro OG SP', 295.00, 'https://images.stockx.com/360/Air-Air-Jordan-4-Retro-OG-SP-Nigel-Sylvester-Bike-Air-Firewood-Orange/Images/Air-Air-Jordan-4-Retro-OG-SP-Nigel-Sylvester-Bike-Air-Firewood-Orange/Lv2/img01.jpg?w=576&amp;q=60&amp;dpr=1&amp;updated_at=1741195086&amp;h=384'),
+('Jordan 1 Retro High OG SP', 205.00, 'https://images.stockx.com/360/Air-Jordan-1-Retro-High-OG-SP-Union-LA-Chicago-Shadow/Images/Air-Jordan-1-Retro-High-OG-SP-Union-LA-Chicago-Shadow/Lv2/img01.jpg?w=576&amp;q=60&amp;dpr=1&amp;updated_at=1740687534&amp;h=384'),
+('Jordan 1 Retro High OG', 148.00, 'https://images.stockx.com/360/Air-Jordan-1-Retro-High-OG-UNC-Reimagined/Images/Air-Jordan-1-Retro-High-OG-UNC-Reimagined/Lv2/img01.jpg?w=576&amp;q=60&amp;dpr=1&amp;updated_at=1744813467&amp;h=384'),
+('Jordan 1 Retro High OG', 140.00, 'https://images.stockx.com/360/Air-Jordan-1-Retro-High-OG-Rare-Air/Images/Air-Jordan-1-Retro-High-OG-Rare-Air/Lv2/img01.jpg?w=576&amp;q=60&amp;dpr=1&amp;updated_at=1741361073&amp;h=384'),
+
+('Jordan 12 Retro Flu Game (2025)', 253.00, 'https://images.stockx.com/360/Air-Jordan-12-Retro-Flu-Game-2025/Images/Air-Jordan-12-Retro-Flu-Game-2025/Lv2/img01.jpg?w=576&amp;q=60&amp;dpr=1&amp;updated_at=1740507702&amp;h=384'),
+('Jordan 12 Retro Melo (2025)', 183.00, 'https://images.stockx.com/360/Air-Jordan-12-Retro-Melo-2025/Images/Air-Jordan-12-Retro-Melo-2025/Lv2/img01.jpg?w=576&amp;q=60&amp;dpr=1&amp;updated_at=1746123836&amp;h=384'),
+('Jordan 12 Retro Playoffs (2022)', 141.00, 'https://images.stockx.com/360/Air-Jordan-12-Retro-Playoffs-2022/Images/Air-Jordan-12-Retro-Playoffs-2022/Lv2/img01.jpg?w=576&amp;q=60&amp;dpr=1&amp;updated_at=1646230066&amp;h=384'),
+('Jordan 12 Retro SP A Ma Maniére Black (Women)', 110.00, 'https://images.stockx.com/360/Air-Jordan-12-Retro-A-Ma-Maniere-Black-W/Images/Air-Jordan-12-Retro-A-Ma-Maniere-Black-W/Lv2/img01.jpg?w=576&amp;q=60&amp;dpr=1&amp;updated_at=1677791962&amp;h=384'),
+('Jordan 12 Retro Phantom (Women)', 178.00, 'https://images.stockx.com/360/Air-Jordan-12-Retro-Phantom-Womens/Images/Air-Jordan-12-Retro-Phantom-Womens/Lv2/img01.jpg?w=576&amp;q=60&amp;dpr=1&amp;updated_at=1733862181&amp;h=384')</string>
+		<string>create table articoli(
+id integer PRIMARY KEY AUTO_INCREMENT,
+nome varchar(255),
+prezzo decimal(10, 2),
+immagine varchar(255)
+)</string>
+		<string>create table articoli(
+id integer PRIMARY KEY AUTO_INCREMENT,
+nome varchar(255),
+prezzo deciaml(10,2),
+immagine varchar(255)
+)</string>
+		<string>create table articoli(
+id integer PRIMARY KEY AUTO_INCREMENT,
+nome varchar(255),
+prezzo float,
+immagine varchar(255)
+)</string>
+		<string>create table if not exists utente(
+name varchar(255),
+surnam varchar(255),
+username varchar(255),
+email varchar(255),
+password varchar(255),
+id integer primary key AUTO_INCREMENT
+)</string>
+		<string>CREATE TABLE IF NOT EXISTS utente(
+name VARCHAR(255),
+surname VARCHAR(255),
+username VARCHAR(255),
+email VARCHAR(255),
+password VARCHAR(255),
+id INTEGER primary key auto_increment
+)
+
+select * from utente</string>
+		<string>CREATE TABLE IF NOT EXISTS utente(
+name VARCHAR(255),
+surname VARCHAR(255),
+username VARCHAR(255),
+email VARCHAR(255),
+password VARCHAR(255),
+id INTEGER primary key auto_increment
+)</string>
+		<string>CREATE TABLE IF NOT EXISTS utente(
+name VARCHAR(255),
+surname VARCHAR(255),
+username VARCHAR(255),
+email VARCHAR(255),
+password VARCHAR(255),
+id INTEGER auto_increment
+)</string>
+		<string>CREATE TABLE IF NOT EXISTS utente(
+name VARCHAR(255),
+surname VARCHAR(255),
+username VARCHAR(255),
+email VARCHAR(255),
+password VARCHAR(255),
+id INTEGER auto_increment
+)
+
+select * from utente</string>
+		<string>CREATE TABLE IF NOT EXISTS utente(
+name VARCHAR(255),
+surname VARCHAR(255),
+username VARCHAR(255),
+email VARCHAR(255),
+password VARCHAR(255),
+id INTEGER
+)
+
+select * from utente</string>
+		<string>CREATE TABLE IF NOT EXISTS utente(
+name VARCHAR(255),
+surname VARCHAR(255),
+username VARCHAR(255),
+email VARCHAR(255),
+password VARCHAR(255),
+id INTEGER
+)</string>
+		<string>CREATE TABLE IF NOT EXISTS utente(
+NAME VARCHAR(255),
+surname VARCHAR(255),
+username VARCHAR(255),
+email VARCHAR(255),
+PASSWORD VARCHAR(255),
+id INTEGER
+)</string>
+		<string>CREATE TABLE IF NOT EXISTS utente{
+NAME VARCHAR(255),
+surname VARCHAR(255),
+username VARCHAR(255),
+email VARCHAR(255),
+password VARCHAR(255),
+id INTEGER
+}</string>
+		<string>CREATE TABLE IF NOT EXISTS utente {
+nome VARCHAR(255),
+surname VARCHAR(255),
+username VARCHAR(255),
+email VARCHAR(255),
+pass VARCHAR(255),
+id INTEGER
+}</string>
+		<string>CREATE TABLE IF NOT EXISTS utente {
+NAME VARCHAR(255),
+surname VARCHAR(255),
+username VARCHAR(255),
+email VARCHAR(255),
+PASSWORd VARCHAR(255),
+id INTEGER
+}</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.5.5-10.4.28-MariaDB</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
