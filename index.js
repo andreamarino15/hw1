@@ -130,8 +130,8 @@ chat_now.addEventListener('click', startChat);
 // API YOUTUBE
 /*
 // variabili globali
-const key = 'AIzaSyBNPH3GN8ApXtwaK-mJESJlFqeWy3ynw7M'; // chiave per API
-const playlistID = 'UU8i2VloWFKMugidh9rCUAoA'; // id del canale
+const key = ''; // chiave per API
+const playlistID = ''; // id del canale
 const endPoint = 'https://www.googleapis.com/youtube/v3/playlistItems'; // link dell'API
 const API_URL = endPoint + '?key=' + key + '&playlistId=' + playlistID + '&part=snippet&maxResults=1'; // bisogna separare le variabili con & e l'endpoint col ?
 // snippet ritorna sola la parte snippet del json mentre maxResults solo un valore impostato
@@ -163,7 +163,7 @@ fetch('API_youtube.php').then(onResponse).then(onJsonYT); // mettere sempre dopo
 // API VERIFICA EMAIL
 
 // variabili globali
-const key_verify = '32b516ddd63147c48c9da218b638fcc5'; //32b516ddd63147c48c9da218b638fcc5
+const key_verify = '';
 const endPoint_verify = 'https://emailvalidation.abstractapi.com/v1/';
 
 function controllo(status) {
